@@ -13,6 +13,14 @@ abstract class Model
         $this->table = $table;
     }
 
+    /**
+     * @return string
+     */
+    public function getTable(): string
+    {
+        return $this->table;
+    }
+
     public function all(): array
     {
         return $this->createQuery()

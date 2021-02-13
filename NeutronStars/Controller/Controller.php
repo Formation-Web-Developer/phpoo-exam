@@ -28,4 +28,10 @@ abstract class Controller
         $this->render('app.404');
         die;
     }
+
+    public function redirect(string $route, $params = [])
+    {
+        header('Location: '.Kernel::get()->getRouter()->get($route, $params));
+        die;
+    }
 }

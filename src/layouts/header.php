@@ -2,6 +2,10 @@
     <nav>
         <ul>
             <li><a href="<?=$router->get('home')?>"><i class="fas fa-home"></i></a></li>
+            <li><a href="<?=$router->get('conducteur')?>"><i class="fas fa-user"></i> Conducteur</a></li>
+            <li><a href="<?=$router->get('vehicule')?>"><i class="fas fa-car"></i> Vehicule</a></li>
+            <li><a href="<?=$router->get('association')?>"><i class="fas fa-link"></i> Association</a></li>
+            <li><a href="<?=$router->get('divers')?>"><i class="fas fa-info"></i> Divers</a></li>
         </ul>
     </nav>
     <div class="socials">

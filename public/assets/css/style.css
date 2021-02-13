@@ -26,15 +26,11 @@ header {
     color: white;
     display: flex;
     justify-content: space-between;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
-header .socials{
-    padding: 1rem;
-}
-
-header .socials a {
-    margin-left: .5rem;
+header nav ul{
+    display: flex;
 }
 
 header li a{
@@ -44,6 +40,14 @@ header li a{
 
 header li a:hover {
     background-color: #5c5c5c;
+}
+
+header .socials{
+    padding: 1rem;
+}
+
+header .socials a {
+    margin-left: .5rem;
 }
 
 main h1 {
@@ -90,4 +94,87 @@ h2{
     padding: 1rem;
     margin: 1rem;
     overflow-x: auto;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.col, .col-2, .col-3, .col-4{
+    padding: .5rem 0;
+    border-top: 1px solid #c7c7c7;
+}
+
+.col{
+    width: 20%;
+}
+
+.col-2{
+    width: calc(100%/7);
+}
+
+.col-3{
+    width: calc(100%/3);
+}
+
+.col-4{
+    width: 50%;
+}
+
+i.fa-pencil-alt{
+    color: #238fe2;
+}
+
+i.fa-times{
+    color: #c42c2c;
+}
+
+
+.form{
+    margin: 5rem 0;
+}
+
+form, form label, form input, form textarea, form select{
+    display: block;
+    width: 100%;
+}
+
+form label, form input, form textarea, form select{
+    margin: .5rem 0;
+}
+
+form input, form select, form textarea{
+    padding: .3rem;
+    border: 1px solid #c7c7c7;
+    border-radius: .5rem;
+    outline: none;
+}
+
+form input[type="submit"]{
+    display: inline-block;
+    width: fit-content;
+    padding: .3rem 1rem;
+}
+
+form label, .col.title, .col-2.title, .col-3.title, .col-4.title{
+    font-weight: 700;
+}
+
+form span.error{
+    color: #c42c2c;
+    font-style: italic;
+}
+
+form span.error + input,
+form span.error + textarea,
+form span.error + select{
+    border: 2px solid #c42c2c;
+}
+
+
+.container section{
+    margin-top: 5rem;
 }
